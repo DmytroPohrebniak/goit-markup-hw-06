@@ -958,11 +958,14 @@
 .checkbox-unchecked {
     border: 2px solid var(--text-title-color);
     border-radius: 2px;
-    outline: 0;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.agreement-checkbox:focus ~.checkbox-unchecked,
+.agreement-checkbox:hover ~.checkbox-unchecked {
+    border-color: var(--accent-color);
+} 
 .checkbox-icon {
     opacity: 0;
     transform: scale(1.7);
