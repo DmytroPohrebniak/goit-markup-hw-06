@@ -389,28 +389,43 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
-            <form class="user-form">
+            <form class="user-form" autocomplete="off">
                 <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
-                <div class="user-field">
-                    <label for="first-name">Имя</label>
-                    <input type="text" name="first-name" id="first-name">
-                </div>
-                <div class="user-field">
-                    <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel">
-                </div>
-                <div class="user-field">
-                    <label for="email">Почта</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="user-comment">
-                    <label for="comment">Комментарий</label>
-                    <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
-                </div>
-                <div class="user-agreement">
-                    <input type="checkbox" name="agreement" id="agreement">
-                    <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                </div>
+                <label class="user-field">
+                    <span class="user-label">Имя</span>
+                    <input type="text" name="first-name" class="user-input">
+                    <svg class="form-icon">
+                        <use href="./images/sprite.svg#icon-person"></use>
+                    </svg>
+                </label>
+                <label class="user-field">
+                    <span class="user-label">Телефон</span>
+                    <input type="tel" name="tel" class="user-input">
+                    <svg class="form-icon">
+                        <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                </label>
+                <label class="user-field">
+                    <span class="user-label">Почта</span>
+                    <input type="email" name="email" class="user-input">
+                    <svg class="form-icon">
+                        <use href="./images/sprite.svg#icon-email"></use>
+                    </svg>
+                </label>
+                <label class="user-comment">
+                    <span class="comment">Комментарий</span>
+                    <textarea name="comment" rows="10" placeholder="Введите текст"></textarea>
+                </label>
+                <label class="user-argeement">
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="agreement" class="agreement-checkbox">
+                        <span class="checkbox-unchecked"></span>
+                        <svg class="checkbox-icon">
+                            <use href="./images/sprite.svg#icon-check"></use>
+                        </svg>
+                    </div>
+                    <span class="text-agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></span>
+                </label>
                 <div class="form-button">
                     <button type="submit" class="user-submit">Отправить</button>
                 </div>
